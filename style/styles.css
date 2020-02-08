@@ -1,0 +1,91 @@
+/* Control Styles */
+#control-box {
+    border: black solid 3px;
+    text-align: center;
+}
+.controls {
+    display:inline-block;
+    border: solid black .02rem;
+    padding: 1em;
+  }
+#a-control {
+    text-align: left;
+    display:block;
+    height:100%;
+}
+/* Box Styles */
+.all {
+height:200px;
+width:800px;
+background-color:red;
+z-index:100;
+position:fixed;
+border: black solid 2px;
+}
+.top {
+margin-left:20px;
+height:100px;
+width:200px;
+background-color:blue;
+border: black solid 2px;
+position: relative;
+z-index:50;
+}
+.inside-top{
+margin-left:20px;
+height:100px;
+width:200px;
+background-color:blue;
+border: black solid 2px;
+position: relative; 
+z-index:0;
+opacity:.5;
+}
+.main {
+margin-left:200px;
+margin-top:-30px;
+height:80px;
+width:300px;
+z-index:15;
+position: relative;
+border:white solid 2px;
+}
+#link {
+color:black;
+position:relative;
+margin-left:10px;
+z-index:100;
+}
+#link2 {
+color:black;
+position:relative;
+top:-80px;
+margin-left:140px;
+z-index:1;
+}
+#alink{
+color:black;
+top:-5px;
+margin-left:200px;
+position: relative;
+z-index:100
+}
+
+#e {
+    text-align: center;
+}
+
+#surprise {
+position:fixed;
+font-size:10rem;
+z-index:5;
+margin-top:0px;
+background-color:white;
+height:205px;
+width:805px;
+}
+a:hover, a:focus{
+    background:white;
+    color: black;
+    font-weight: bold;
+}

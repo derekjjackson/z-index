@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Z-Index Exploration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="control-box">
+            <div class="controls" id="a-controls">
+                <p>
+                    <label for="a-z">A z-index</label>
+                    <input type="text" value="0" class="a-input" id="a-z">
+                </p>
+                <p>
+                    <label for="alink-vert">A link vertical slider:</label>
+                    <input type="range" min="-180" max="0" value="0" class="slider" id="alink-vert">
+                </p>
+                <p>
+                    <label for="alink-z">A link z-index</label>
+                    <input type="text" value="0" class="z-input" id="alink-z">
+                </p>
+            </div>
+            <div class="controls" id="b-controls">
+                <p>
+                    <label for="B-left">Box B horizontal slider:</label>
+                    <input type="range" min="10" max="300" value="20" class="slider" id="B-left">
+                </p>
+                <p>
+                    <label for="B-z">Box B z-index value:</label>
+                    <input type="text" value="50" class="z-input" id="B-z">
+                </p>
+            </div>
+            <div class="controls" id="b1-controls">
+                <p>
+                    <label for="b1-left">Box b1 horizontal slider:</label>
+                    <input type="range" min="10" max="280" value="20" class="slider" id="b1-left">
+                </p>
+                <p>
+                    <label for="b1-z">Box b1 z-index value:</label>
+                <input type="text" value="50" class="z-input" id="b1-z"></p>
+            </div>
+            <div class="controls" id="c-controls">
+                <p>
+                    <label for="c-left">Box C horizontal slider:</label>
+                    <input type="range" min="0" max="480" value="200" class="slider" id="c-left">
+                </p>
+                <p>
+                    <label for="c-z">Box C z-index value:</label>
+                    <input type="text" value="50" class="z-input" id="c-z"></p>
+            </div>
+        </div>
+        <div class="info" id="descritpion">
+            <p>Box A contains all of the content.</p>
+            <p>Box B, Box C and "A link" are all siblings.</p>
+            <p>Box B has two children: Box b1 and link b</p>
+            <p>Box C has one child: "link for things like navigation.</p>
+            <p>Box A also has one sibling that has a smaleer z-index and so is not immediately visible.</p>
+
+        </div>
+        <div class="all" id="a">
+            A
+            <div class="top" id="b">
+              B
+                <div id="b1" class="inside-top">
+                    b1
+                </div>
+                <a id="link2" href="#">b link</a>
+                
+            </div>
+            <div class="main" id="c">
+              C
+                <div id="e">
+                    <p> <a href="#" id="link">links for things like navigation.</a></p>
+                </div>
+            </div>
+            <a href="#" id="alink">A link</a>
+          </div>
+          <p id="surprise">Easter Egg</p>
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>
