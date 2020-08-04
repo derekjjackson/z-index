@@ -58,12 +58,16 @@
                     <input type="text" value="50" class="z-input" id="c-z"></p>
             </div>
         </div>
-        <div class="info" id="descritpion">
-            <p>Box A contains all of the content.</p>
-            <p>Box B, Box C and "A link" are all siblings.</p>
-            <p>Box B has two children: Box b1 and link b</p>
-            <p>Box C has one child: "link for things like navigation.</p>
-            <p>Box A also has one sibling that has a smaleer z-index and so is not immediately visible.</p>
+        
+         <div class="info" id="description">
+            <p>Use the sliders and text boxes to change different properties in Red Box A below and see how position and z-index affect tab order and your ability to interact with elements.</p>
+            <p>No Matter how these Items are moved they will always be read by a screen reader in the same order.</p>
+            <h4>Useful information about the containers.</h4>
+            <p>Box A contains all of the other containers and links.</p>
+            <p>Box B, Box C, and "A link" are all siblings with Box A as their parent container. Note how the the Box A's children's Z-index affect their display between one another.</p>
+            <p>Box B has two children: Box b1 and link b. Their can only sit relative to their parent on the z plane, essentially, they are stuck competing with one another to be on top. But is their parent, B box, is on top so are they.</p>
+            <p>Box C has one child: "link for things like navigation", which is just intended as the kind of link that might be affected by z-index. Box C is also transparent.</p>
+            <p>Box A also has one sibling that has a smaller z-index and so is not immediately visible.</p
 
         </div>
         <div class="all" id="a">
